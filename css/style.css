@@ -77,16 +77,22 @@ a {
 	width: 1170px;
 	margin: 0 auto;
 	padding: 0 10px;
-
-
 }
 
 .container-1 {
-	width: 1920px;
-	margin: 0 auto;
-	padding: 0 10px;
+	width: 100%;
+	margin-top: 0;
+}
 
-	
+.container-2 {
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.container-3 {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 0px;
 }
 
 ul {
@@ -97,67 +103,61 @@ ul {
 .wrapper-navigation {
 	display: flex;
 
-
-	
 	background: #ffffff;
 }
-
 
 
 .main-wrapper-navigation {
 	display: flex;
 	
 	justify-content: space-around;
-
-	
-
 	position: relative;
 }
 
 .main-wrapper-navigation li {
 	display: flex;
-	
-
 }
 
 .phone-1 {
-	margin-right: 109px;
-	margin-left: 240px;
+	margin-right: 90px;
+	margin-left: 630px;
 
 	color: rgba(0, 0, 0, 0.5);
 
 }
+
+.phone-2 {
+	padding-right: 0px;
+
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .phone-1::after {
 	content: url(../img/svg/eye.svg);
 	position: absolute;
-	left: 600px;
+	left: 580px;
 }
 
 .phone-1::before {
 	content: url(../img/svg/a1.svg);
 	
 	position: absolute;
-	right: 310px;
-	
+	right: 200px;
+	top: 2px;	
 }
 
 .phone-2::after {
 	content: url(../img/svg/whatsapp.svg);
 	position: absolute;
-	right: 230px;
+	right: 150px;
+	top: 2px;	
 }
 
 .phone-2::before {
 	content: url(../img/svg/mts.svg);
 	position: absolute;
-	right: 0px;
-}
-
-.phone-2 {
-	padding-right: 80px;
-
-	color: rgba(0, 0, 0, 0.5);
-
+	right: -25px;
+	top: 2px;
 }
 
 /*.phone-1-svg::before {
@@ -167,10 +167,8 @@ ul {
 }*/
 
 .language {
-	margin-right: 400px;
+	margin-right: 0px;
 	position: relative;
-
-	
 }
 
 .language::after {
@@ -240,25 +238,34 @@ h1 {
 	margin-top: 0px;
 	background-color: #ffffff;
 
-	
+	position: relative;
+}
+
+.wrapper-hidden {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .wrapper-main-text h1  {
 	position: absolute;
-	z-index: 10px;
-	bottom: 300px;
+	z-index: 10;
+	
+	top: 80px;
 }
 
 .main-text {
 	position: absolute;
-	z-index: 10px;
-	bottom: 280px;	
+	z-index: 10;
+	
+	top: 200px;	
 }
 
 .button-all {
 	position: absolute;
-	z-index: 10px;
-	bottom: 240px;
+	z-index: 10;
+	
+	top: 275px;
 }
 
 
@@ -298,20 +305,22 @@ h1 {
 	top: -90px;
 }
 
-.block-1, .block-2, .block-3, .block-4 {
-	
-	
+.block-1, 
+.block-2, 
+.block-3, 
+.block-4 {
 	display: flex;
-	
 	flex-direction: column;
 	align-items: center;
 		
-	padding: 135px 142px 135px 142px;
+	padding: 135px 135px 135px 135px;
 	background-color: #ffffff;
-	
-	
+}
 
-	 
+.block-1, 
+.block-2, 
+.block-3 {
+	margin-right: 30px;
 }
 
 .block-1 h4, .block-2 h4, .block-3 h4, .block-4 h4 {
@@ -378,13 +387,11 @@ h1 {
 .block-activity {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 .block-activity-main {
 	margin-bottom: 100px;
-
-
 }
 
 .block-activity-1 {
@@ -463,23 +470,35 @@ h1 {
     background-color: #ffffff; 
 }
 
-.block-activity-1, .block-activity-2, .block-activity-3,
-.block-activity-4, .block-activity-5, .block-activity-6,
-.block-activity-7, .block-activity-8, .block-activity-9 {
+.block-activity-1, .block-activity-2, 
+.block-activity-4, .block-activity-5, 
+.block-activity-7, .block-activity-8 {
 	
 	margin-right: 30px;
 	margin-bottom: 30px;
-	width: 350px;
+	width: 360px;
 
 	flex-direction: column;
 	align-items: center;
-}    
+} 
+
+.block-activity-3,
+.block-activity-6,
+.block-activity-9 {
+	margin-bottom: 30px;
+	width: 360px;
+
+	flex-direction: column;
+	align-items: center;
+}
 
 .block-activity h4 {
 	font-family: 'Commissioner';
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 30px;
+
+	margin-left: 40px;
 }   
 
 .block-activity a {
@@ -489,6 +508,8 @@ h1 {
 	line-height: 20px;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.5);
+
+	margin-left: 40px;
 }
 
 
@@ -901,15 +922,14 @@ h1 {
 .block-advantages {
 	margin-bottom: 40px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	position: relative;
 }
 
 .block-advantages-1,
 .block-advantages-2,
-.block-advantages-3,
-.block-advantages-4 {
+.block-advantages-3 {
 	display: flex;
 	
 	flex-direction: column;
@@ -918,6 +938,18 @@ h1 {
 	width: 270px;
 	height: 335px;
 	margin-right: 30px;
+	background-color: #ffffff;
+}
+
+.block-advantages-4 {
+	display: flex;
+	
+	flex-direction: column;
+	align-items: center;
+	
+	width: 270px;
+	height: 335px;
+
 	background-color: #ffffff;
 }
 
